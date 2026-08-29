@@ -11,9 +11,9 @@ namespace Soenneker.Plex.OpenApiClientUtil.Abstract;
 public interface IPlexOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Returns the configured plex OpenAPI Client used by the Plex OpenAPI Client.
     /// </summary>
-    /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <param name="cancellationToken">Token used to cancel the operation.</param>
+    /// <returns>A task whose result is the requested plex OpenAPI Client.</returns>
     ValueTask<PlexOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
