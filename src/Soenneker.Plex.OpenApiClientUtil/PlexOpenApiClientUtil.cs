@@ -14,7 +14,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Plex.OpenApiClientUtil;
 
-///<inheritdoc cref="IPlexOpenApiClientUtil"/>
+/// <inheritdoc cref="IPlexOpenApiClientUtil"/>
 public sealed class PlexOpenApiClientUtil : IPlexOpenApiClientUtil
 {
     private readonly AsyncSingleton<PlexOpenApiClient> _client;
