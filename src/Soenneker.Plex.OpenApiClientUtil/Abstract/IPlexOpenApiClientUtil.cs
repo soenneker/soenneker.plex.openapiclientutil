@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Plex.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a lazily initialized Plex OpenAPI client backed by the process-wide Plex HTTP transport.
 /// </summary>
 public interface IPlexOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Returns the configured plex OpenAPI Client used by the Plex OpenAPI Client.
+    /// Gets the configured Plex OpenAPI client.
     /// </summary>
     /// <param name="cancellationToken">Token used to cancel the operation.</param>
-    /// <returns>A task whose result is the requested plex OpenAPI Client.</returns>
+    /// <returns>The cached client for this utility instance.</returns>
     ValueTask<PlexOpenApiClient> Get(CancellationToken cancellationToken = default);
 }

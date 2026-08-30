@@ -11,7 +11,7 @@ namespace Soenneker.Plex.OpenApiClientUtil.Registrars;
 public static class PlexOpenApiClientUtilRegistrar
 {
     /// <summary>
-    /// Adds <see cref="PlexOpenApiClientUtil"/> as a singleton service. <para/>
+    /// Adds the Plex OpenAPI client utility as a singleton service.
     /// </summary>
     /// <param name="services">Service collection that receives the registration.</param>
     /// <returns>The same service collection, so additional registrations can be chained.</returns>
@@ -24,7 +24,7 @@ public static class PlexOpenApiClientUtilRegistrar
     }
 
     /// <summary>
-    /// Adds <see cref="PlexOpenApiClientUtil"/> as a scoped service. <para/>
+    /// Adds the Plex OpenAPI client utility as a scoped service backed by the singleton Plex HTTP client.
     /// </summary>
     /// <param name="services">Service collection that receives the registration.</param>
     /// <returns>The same service collection, so additional registrations can be chained.</returns>
