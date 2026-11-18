@@ -44,7 +44,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Plex.HttpClients" Version="11.0.184" />
+        <PackageReference Include="Soenneker.Plex.HttpClients" Version="11.0.185" />
         <PackageReference Include="Soenneker.Plex.OpenApiClient" Version="11.0.69" />
     </ItemGroup>
 </Project>
